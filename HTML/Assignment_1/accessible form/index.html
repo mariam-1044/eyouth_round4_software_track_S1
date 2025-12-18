@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Form</title>
+</head>
+<body>
+
+    <!-- 
+    4. Create an Accessible Form With Validations
+    Requirements:
+	    â€¢	<label for=""> for all inputs
+	    â€¢	Email input with pattern
+	    â€¢	Phone number input with pattern
+	    â€¢	Date picker
+	    â€¢	Textarea
+	    â€¢	Required fields
+	    â€¢	Fieldset + legend
+	    â€¢	Add aria attributes (aria-describedby, aria-invalid)
+     -->
+
+    <form>
+        <fieldset>
+            <legend>Please Enter Your Information</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required aria-invalid="false">
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}"
+            aria-describedby="emailHelp" aria-invalid="false">
+            <small id="emailHelp"> Enter a valid email address.</small>
+            <br><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" required pattern="[0-9]{11}" aria-describedby="phoneHelp"
+             aria-invalid="false">
+            <small id="phoneHelp"> Phone number must be 11 digits.</small>
+            <br><br>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <br><br>
+
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" required aria-invalid="false"></textarea>
+            <br><br>
+
+            <button type="submit">Submit</button> 
+        </fieldset>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to our website home page">
+    <link rel="canonical" href="https://example.com/">
+    <title>Home Page</title>
+    <meta property="og:title" content="Home Page">
+    <meta property="og:description" content="Welcome to our website">
+    <meta property="og:image" content="https://example.com/og.jpg">
+</head>
+<body>
+
+    <!-- 
+    5. Build a Multi-Page Website With Proper Semantic Structure
+    Create a 3-page website:
+	   â€¢	index.html
+	   â€¢	about.html
+	   â€¢	contact.html
+    Requirements:
+	   â€¢	Use semantic tags everywhere: header, nav, aside, main, article, section, figure, footer
+	   â€¢	Reusable navigation bar on all pages
+	   â€¢	Add breadcrumb navigation on About and Contact pages
+	   â€¢	Add skip-to-content link (for accessibility)
+	   â€¢	Add structured metadata inside <head>:
+	   â€¢	Meta description
+	   â€¢	Canonical link
+	   â€¢	OG tags (title, description, image)
+    -->
+
+    <a href="#main-content">Skip to content</a>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section>
+            <article>
+                <h1>Welcome to our Website</h1>
+                <p>This is the home page</p>
+            </article>
+        </section>
+        <aside>
+            <p>Latest news and updats</p>
+        </aside>
+        <figure>
+            <img src="webbackground.jpg" alt="Website Background">
+            <figcaption>Our Website Preview</figcaption>
+        </figure>
+    </main>
+
+    <footer>
+        <p>Copyright  &copy; 2026</p>
+    </footer>
+    
+</body>
+</html>
