@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Now</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="app">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <i class="fa fa-certificate" aria-hidden="true" style="color: #FBB03B;"></i> 
+        <span>Weather Now</span>
+      </div>
+      
+      <select class="units">
+        <option>⚙ Units</option>
+      </select>
+    </header>
+
+    <!-- Title -->
+    <h1 class="title">How’s the sky looking today?</h1>
+
+    <!-- Search -->
+    <div class="search-box">
+      <i class="fa fa-search search-icon" aria-hidden="true"></i>
+      <input type="text" placeholder="Search for a place..." />
+      <button>Search</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+
+      <!-- Left -->
+      <div class="left">
+
+        <!-- Current Weather -->
+        <div class="current-weather">
+          <div>
+            <h2>Berlin, Germany</h2>
+            <p>Tuesday, Aug 5, 2025</p>
+          </div>
+
+          <div class="temp">
+            <span><i class="fa fa-certificate" aria-hidden="true" style="color: #FBB03B;"></i></span>
+            <h1>20°</h1>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats">
+          <div class="stat">Feels Like<br><span>18°</span></div>
+          <div class="stat">Humidity<br><span>46%</span></div>
+          <div class="stat">Wind<br><span>14 km/h</span></div>
+          <div class="stat">Precipitation<br><span>0 mm</span></div>
+        </div>
+
+        <!-- Daily Forecast -->
+         <br><h4>Daily forecast</h4><br>
+        <div class="daily">
+          <div class="day">Tue 
+            <br><br><i class="fas fa-cloud-rain"></i><br><br>
+            <span>20°</span>   <span>14°</span> 
+          </div>
+          <div class="day">Wed 
+            <br><br><i class="fas fa-cloud-rain"></i><br><br>
+            <span>21°</span>   <span>15°</span>
+          </div>
+          <div class="day">Thu 
+            <br><br><i class="fas fa-sun" style="color: #FBB03B;"></i><br><br>
+            <span>24°</span>   <span>14°</span>
+          </div>
+          <div class="day">Fri 
+            <br><br><i class="fas fa-cloud-sun"></i><br><br>
+            <span>25°</span>   <span>13°</span>
+          </div>
+          <div class="day">Sat 
+            <br><br><i class="fas fa-poo-storm"></i><br><br>
+            <span>21°</span>  <span>15°</span>
+          </div>
+          <div class="day">Sun 
+            <br><br><i class="fas fa-cloud-rain"></i><br><br>
+            <span>25°</span>   <span>16°</span>
+          </div>
+          <div class="day">Mon 
+            <br><br><i class="fas fa-wind"></i><br><br>
+            <span>24°</span>   <span>15°</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right -->
+      <div class="right">
+        <div class="hourly-header">
+          <h3>Hourly forecast</h3>
+          <select>
+            <option>Tuesday</option>
+          </select>
+        </div>
+
+        <div class="hour"><span><i class="fa fa-cloud" aria-hidden="true"></i>  3 PM</span>20°</div>
+        <div class="hour"><span><i class="fas fa-cloud-sun"></i>   4 PM</span> 20°</div>
+        <div class="hour"><span><i class="fas fa-sun" style="color: #FBB03B;"></i>   5 PM</span> 20°</div>
+        <div class="hour"><span><i class="fa fa-cloud" aria-hidden="true"></i>  6 PM</span>19°</div>
+        <div class="hour"><span><i class="fas fa-cloud-rain"></i>  7 PM</span>18°</div>
+        <div class="hour"><span><i class="fas fa-wind"></i>  8 PM</span>18°</div>
+        <div class="hour"><span><i class="fas fa-cloud-rain"></i>   9 PM</span>17°</div>
+        <div class="hour"><span><i class="fa fa-cloud" aria-hidden="true"></i>  10 PM</span>17°</div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
